@@ -1,0 +1,43 @@
+snippet xslfe "XSL for-each"
+<xsl:for-each select="${1:element}">
+	${0}
+</xsl:for-each>
+endsnippet
+
+snippet xslvo "XSL value-of"
+<xsl:value-of select="${1:element}"/>
+endsnippet
+
+snippet xsltpl "XSL template"
+<xsl:template match="${1:element}">
+	${0}
+</xsl:template>
+endsnippet
+
+snippet xslif "XSL if"
+<xsl:if test="${1:a &lt; b}">
+	${0}
+</xsl:if>
+endsnippet
+
+snippet xslch "XSL choose"
+<xsl:choose>
+	<xsl:when test="${1:a &lt; b}">
+		${2}
+	</xsl:when>
+	<xsl:otherwise>
+		${0}
+	</xsl:otherwise>
+</xsl:choose>
+endsnippet
+
+snippet xslwh "XSL when"
+<xsl:when test="${1:a &lt; b}">
+	${0}
+</xsl:when>
+endsnippet
+
+snippet xslat "XSL apply-templates"
+<xsl:apply-templates select="${1:element}"/>
+endsnippet
+
